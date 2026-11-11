@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "en-US": "Ctrl/Cmd+T and the + button open the new tab in the container of the tab you were on. Optionally pick a fallback container for tabs that had none."
+  },
+  "description": {
+    "en-US": "Firefox opens every new tab outside any container, even when you are working inside one. This extension makes a new blank tab follow you: press Ctrl+T (Cmd+T on Mac) or click the + button, and the tab opens in the container of the tab you were just on.\n\n<b>How it works</b>\n<ul><li>A new blank tab opens in the container of the last tab you looked at in that window.</li><li>If that tab had no container, the new tab goes to the fallback container you choose in the extension's options. The default is \"No container\", which leaves the tab alone.</li><li>Tabs that open with an address (links, other apps, restored sessions) are never touched.</li><li>Private windows are never touched.</li></ul>\n\n<b>Privacy</b>\nThe extension collects no data and makes no network requests. It only reads which container a tab belongs to. The source code is public: https://github.com/maruen/newtab-follows-container\n\nRequires Firefox containers (built into Firefox; the Multi-Account Containers add-on makes them easier to manage)."
+  },
+  "homepage": { "en-US": "https://github.com/maruen/newtab-follows-container" },
+  "support_url": { "en-US": "https://github.com/maruen/newtab-follows-container/issues" },
+  "categories": { "firefox": ["tabs"] },
+  "version": {
+    "license": "MIT",
+    "release_notes": {
+      "en-US": "First public release. Adds an options page to choose the fallback container."
+    }
+  }
+}
