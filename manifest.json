@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab Follows Container",
+  "version": "1.1.0",
+  "description": "Ctrl/Cmd+T and the + button open the new tab in the container of the tab you were on. Optionally pick a fallback container for when that tab had none.",
+  "homepage_url": "https://github.com/maruen/newtab-follows-container",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newtab-follows-container@mehana.com.br",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": [
+    "contextualIdentities",
+    "cookies",
+    "storage",
+    "tabs"
+  ]
+}
